@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import APIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,35 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // エンドポイント用のクラスを生成する
+        let request = HNTopRequest()
+        // WebAPIへのアクセス
+        Session.sendRequest(request) { result in
+            switch result {
+            case .Success(let response): // 成功時は、Weather型のデータが取得できる
+                let sliced = response.IDList[0..<4]
+                for ID in sliced {
+                    let r = HNStoryRequest.init(ID: ID)
+                    Session.sendRequest(r) { result in
+                        switch result {
+                        case .Success(let res): // 成功時は、Weather型のデータが取得できる
+                            print("ID: \(res.ID)")
+                            print("\tAuthor: \(res.Author)")
+                            print("\tScore: \(res.Score)")
+                            print("\tTime: \(res.Time)")
+                            print("\tTitle: \(res.Title)")
+                            print("\tUrl: \(res.Url)")
+                        case .Failure(let error): // 失敗した場合、NSError型となる
+                            print("error: \(error)")
+                        }
+                    }
+                }
+            case .Failure(let error): // 失敗した場合、NSError型となる
+                print("error: \(error)")
+            }
+        }
+        
         return true
     }
 
