@@ -9,14 +9,16 @@
 /* Begin PBXBuildFile section */
 		23CD31C946938A9DBED770A9 /* Pods_HNTop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D66548345B9CC8B43E63035 /* Pods_HNTop.framework */; };
 		C634CEB31C7B634B00968302 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C634CEB21C7B634B00968302 /* AppDelegate.swift */; };
-		C634CEB51C7B634B00968302 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C634CEB41C7B634B00968302 /* ViewController.swift */; };
-		C634CEB81C7B634B00968302 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C634CEB61C7B634B00968302 /* Main.storyboard */; };
+		C634CEB81C7B634B00968302 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C634CEB61C7B634B00968302 /* Main.storyboard */; settings = {ASSET_TAGS = (4, ); }; };
 		C634CEBA1C7B634B00968302 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C634CEB91C7B634B00968302 /* Assets.xcassets */; };
 		C634CEBD1C7B634B00968302 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C634CEBB1C7B634B00968302 /* LaunchScreen.storyboard */; };
 		C634CEC81C7B634B00968302 /* HNTopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C634CEC71C7B634B00968302 /* HNTopTests.swift */; };
 		C634CED31C7B634B00968302 /* HNTopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C634CED21C7B634B00968302 /* HNTopUITests.swift */; };
 		C634CEE31C7B735900968302 /* HNTopBuffers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C634CEE21C7B735900968302 /* HNTopBuffers.swift */; };
 		C6B0D7831C7B7C0700B094D4 /* HNStoryBuffers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B0D7821C7B7C0700B094D4 /* HNStoryBuffers.swift */; };
+		C6B0D78D1C7F61A200B094D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B0D78C1C7F61A200B094D4 /* ViewController.swift */; };
+		C6B0D78F1C7F62CD00B094D4 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B0D78E1C7F62CD00B094D4 /* TableViewController.swift */; };
+		C6B0D7911C7F631600B094D4 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B0D7901C7F631600B094D4 /* NavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +44,6 @@
 		636338AAFC23C064F1577CE0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		C634CEAF1C7B634B00968302 /* HNTop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HNTop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C634CEB21C7B634B00968302 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C634CEB41C7B634B00968302 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C634CEB71C7B634B00968302 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C634CEB91C7B634B00968302 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C634CEBC1C7B634B00968302 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,6 +56,9 @@
 		C634CED41C7B634B00968302 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C634CEE21C7B735900968302 /* HNTopBuffers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HNTopBuffers.swift; sourceTree = "<group>"; };
 		C6B0D7821C7B7C0700B094D4 /* HNStoryBuffers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HNStoryBuffers.swift; sourceTree = "<group>"; };
+		C6B0D78C1C7F61A200B094D4 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C6B0D78E1C7F62CD00B094D4 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		C6B0D7901C7F631600B094D4 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,14 +129,16 @@
 		C634CEB11C7B634B00968302 /* HNTop */ = {
 			isa = PBXGroup;
 			children = (
+				C6B0D78C1C7F61A200B094D4 /* ViewController.swift */,
 				C634CEB21C7B634B00968302 /* AppDelegate.swift */,
-				C634CEB41C7B634B00968302 /* ViewController.swift */,
 				C634CEB61C7B634B00968302 /* Main.storyboard */,
+				C6B0D7901C7F631600B094D4 /* NavigationController.swift */,
 				C634CEB91C7B634B00968302 /* Assets.xcassets */,
 				C634CEBB1C7B634B00968302 /* LaunchScreen.storyboard */,
 				C634CEBE1C7B634B00968302 /* Info.plist */,
 				C634CEE21C7B735900968302 /* HNTopBuffers.swift */,
 				C6B0D7821C7B7C0700B094D4 /* HNStoryBuffers.swift */,
+				C6B0D78E1C7F62CD00B094D4 /* TableViewController.swift */,
 			);
 			path = HNTop;
 			sourceTree = "<group>";
@@ -220,6 +226,12 @@
 		C634CEA71C7B634B00968302 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					1,
+					2,
+					3,
+					4,
+				);
 				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = hatanakayusuke;
@@ -338,9 +350,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C634CEB51C7B634B00968302 /* ViewController.swift in Sources */,
+				C6B0D78D1C7F61A200B094D4 /* ViewController.swift in Sources */,
+				C6B0D7911C7F631600B094D4 /* NavigationController.swift in Sources */,
 				C634CEE31C7B735900968302 /* HNTopBuffers.swift in Sources */,
 				C634CEB31C7B634B00968302 /* AppDelegate.swift in Sources */,
+				C6B0D78F1C7F62CD00B094D4 /* TableViewController.swift in Sources */,
 				C6B0D7831C7B7C0700B094D4 /* HNStoryBuffers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
